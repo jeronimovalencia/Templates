@@ -1,0 +1,52 @@
+\documentclass[a4paper,11pt]{amsart}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,subcaption,graphicx,amsthm,enumitem,mathpazo,xcolor,tikz-cd, multicol,comment,lipsum} 
+
+\usepackage[backend=bibtex,natbib=true]{biblatex}
+%\bibliographystyle{my-siam}
+\usepackage{xcolor}
+
+\addbibresource{references.bib}
+\graphicspath{{Figures/}}
+
+\usepackage{amsthm, multicol}
+
+\title{Article Template}
+
+\author{Jerónimo Valencia-Porras}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\theoremstyle{definition}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\theoremstyle{definition}
+\newtheorem{question}{Question}
+\theoremstyle{definition}
+\newtheorem{conjecture}{Conjecture}
+
+\newcommand{\jeronimo}[1]{\textcolor{blue}{#1}}
+
+
+\begin{document}
+\maketitle
+\vspace{-0.5cm}
+\begin{abstract}
+    \lipsum[1-1]
+\end{abstract}
+
+\section{Introduction}
+\lipsum[2-2]
+
+\section{Whatever}
+\lipsum[3-4]
+
+\end{document}

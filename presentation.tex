@@ -1,0 +1,77 @@
+\documentclass[9pt]{beamer}
+\setbeamertemplate{subsection in toc}[sections numbered]
+\setbeamersize{text margin left=7mm,text margin right=7mm}
+
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{beaver} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+  %\setbeamertemplate{footline}[frame number]
+} 
+\usepackage{xcolor}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[backend=bibtex,style=numeric-comp,natbib=true]{biblatex}
+\addbibresource{references.bib} 
+\usepackage[autostyle=true]{csquotes}
+\usepackage{mathpazo,amsmath,amssymb,subcaption,graphicx,amsthm,multicol,lipsum} 
+\usepackage{amsmath,amssymb,tikz-cd,tikz}
+\usetikzlibrary{arrows,shapes,positioning,calc}
+\tikzset{main node/.style={circle,fill=black,draw,minimum size=.25cm,inner sep=0pt},
+            }
+\usepackage[upright]{fourier}
+\usetikzlibrary{babel}
+
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+\title[]{Title}
+\author{Jerónimo Valencia-Porras}
+\institute{University of Waterloo}
+\date{??}
+
+\theoremstyle{definition}
+\newtheorem{defin}[theorem]{Definición}
+\theoremstyle{definition}
+\newtheorem{proposition}[theorem]{Proposición}
+\theoremstyle{definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Observación}
+\theoremstyle{definition}
+\newtheorem{question}[theorem]{Question}
+\theoremstyle{definition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\newcommand{\comment}[1]{}
+
+\begin{document}
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section{?}
+
+\subsection{??}
+
+\begin{frame}{First title}
+    \lipsum[1-1] 
+\end{frame}
+
+%\begin{frame}[allowframebreaks]{References}
+%    \printbibliography
+%\end{frame}
+
+\end{document}
+
+
